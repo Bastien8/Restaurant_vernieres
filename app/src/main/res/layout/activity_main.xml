@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/starterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#FFC107"
+        android:text="@string/starter"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:iconTint="#FFC107"
+        app:layout_constraintBottom_toTopOf="@+id/mainButton"
+        app:layout_constraintEnd_toEndOf="@+id/mainButton"
+        app:layout_constraintStart_toStartOf="@+id/mainButton" />
+
+    <Button
+        android:id="@+id/mainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="@string/main"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:iconTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FFC107"
+        android:text="@string/finish"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:iconTint="#FFC107"
+        app:layout_constraintEnd_toEndOf="@+id/mainButton"
+        app:layout_constraintStart_toStartOf="@+id/mainButton"
+        app:layout_constraintTop_toBottomOf="@+id/mainButton" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="287dp"
+        android:layout_height="348dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.18"
+        app:srcCompat="@drawable/restaurant_logo_design_template_c2119aff1d9a65251729cbc3510375e7_screen" />
+
+    <TextView
+        android:id="@+id/Titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Titre"
+        android:textColor="#2E1313"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
